@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/my/my"],{
 
-/***/ 61:
+/***/ 88:
 /*!*****************************************************************************!*\
   !*** C:/Users/16110/Desktop/store/store/main.js?{"page":"pages%2Fmy%2Fmy"} ***!
   \*****************************************************************************/
@@ -13,7 +13,7 @@
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
 __webpack_require__(/*! uni-pages */ 26);
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
-var _my = _interopRequireDefault(__webpack_require__(/*! ./pages/my/my.vue */ 62));
+var _my = _interopRequireDefault(__webpack_require__(/*! ./pages/my/my.vue */ 89));
 // @ts-ignore
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 createPage(_my.default);
@@ -21,7 +21,7 @@ createPage(_my.default);
 
 /***/ }),
 
-/***/ 62:
+/***/ 89:
 /*!**********************************************************!*\
   !*** C:/Users/16110/Desktop/store/store/pages/my/my.vue ***!
   \**********************************************************/
@@ -32,5 +32,5 @@ throw new Error("Module build failed (from ./node_modules/@dcloudio/webpack-uni-
 
 /***/ })
 
-},[[61,"common/runtime","common/vendor"]]]);
+},[[88,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/my/my.js.map
