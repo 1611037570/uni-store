@@ -15,17 +15,21 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
 __webpack_require__(/*! uni-pages */ 26);
 var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 27));
+var _showMsg = _interopRequireDefault(__webpack_require__(/*! ./utils/showMsg */ 102));
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 // @ts-ignore
 wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 _vue.default.config.productionTip = false;
-_App.default.mpType = 'app';
+_App.default.mpType = "app";
 try {
   var isPromise = function isPromise(obj) {
     return !!obj && ((0, _typeof2.default)(obj) === "object" || typeof obj === "function") && typeof obj.then === "function";
-  }; // 统一 vue2 API Promise 化返回格式与 vue3 保持一致
+  };
+  uni.$msg = _showMsg.default;
+
+  // 统一 vue2 API Promise 化返回格式与 vue3 保持一致
   uni.addInterceptor({
     returnValue: function returnValue(res) {
       if (!isPromise(res)) {
