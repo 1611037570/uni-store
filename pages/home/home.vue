@@ -1,5 +1,6 @@
 <template>
     <view>
+		<mySearch></mySearch>
         <!-- 轮播图区域 -->
         <swiper
             :indicator-dots="true"

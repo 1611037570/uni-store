@@ -18,3 +18,11 @@ export function getFloor(params) {
         params,
     });
 }
+
+// cate
+export function getCate(params) {
+    return request.get({
+        url: "/categories",
+        params,
+    });
+}
